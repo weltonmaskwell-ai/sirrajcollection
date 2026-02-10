@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +14,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        :root {
+         :root {
             --primary-color: #1a1a1a;
             --secondary-color: #d4af37;
             --accent-color: #8b5a2b;
@@ -26,43 +27,48 @@
             --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
             --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.12);
         }
-
+        
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
+        
         body {
             font-family: 'Montserrat', sans-serif;
             color: var(--text-dark);
             line-height: 1.6;
             overflow-x: hidden;
         }
-
-        h1, h2, h3, h4, h5, h6 {
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
             font-family: 'Playfair Display', serif;
             font-weight: 700;
         }
-
         /* Header Styles */
+        
         .top-bar {
             background: var(--dark-bg);
             color: var(--white);
             font-size: 0.875rem;
             padding: 8px 0;
         }
-
+        
         .top-bar a {
             color: var(--white);
             text-decoration: none;
             transition: var(--transition);
         }
-
+        
         .top-bar a:hover {
             color: var(--secondary-color);
         }
-
+        
         .main-header {
             background: var(--white);
             box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
@@ -71,7 +77,7 @@
             z-index: 1000;
             padding: 15px 0;
         }
-
+        
         .logo {
             font-family: 'Playfair Display', serif;
             font-size: 1.8rem;
@@ -80,11 +86,11 @@
             text-decoration: none;
             display: inline-block;
         }
-
+        
         .logo span {
             color: var(--secondary-color);
         }
-
+        
         .nav-link {
             font-weight: 500;
             color: var(--text-dark);
@@ -92,30 +98,31 @@
             transition: var(--transition);
             border-radius: 4px;
         }
-
-        .nav-link:hover, .nav-link.active {
+        
+        .nav-link:hover,
+        .nav-link.active {
             color: var(--secondary-color);
             background: rgba(212, 175, 55, 0.1);
         }
-
+        
         .header-actions {
             display: flex;
             align-items: center;
             gap: 20px;
         }
-
+        
         .action-icon {
             position: relative;
             color: var(--text-dark);
             font-size: 1.2rem;
             transition: var(--transition);
         }
-
+        
         .action-icon:hover {
             color: var(--secondary-color);
             transform: translateY(-2px);
         }
-
+        
         .badge-count {
             position: absolute;
             top: -8px;
@@ -130,28 +137,28 @@
             align-items: center;
             justify-content: center;
         }
-
         /* Hero Section */
+        
         .hero-section {
             background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
             padding: 100px 0;
             position: relative;
             overflow: hidden;
         }
-
+        
         .hero-content h1 {
             font-size: 4.5rem;
             font-weight: 800;
             line-height: 1.1;
             margin-bottom: 20px;
         }
-
+        
         .hero-highlight {
             color: var(--secondary-color);
             position: relative;
             display: inline-block;
         }
-
+        
         .hero-highlight::after {
             content: '';
             position: absolute;
@@ -162,18 +169,18 @@
             background: rgba(212, 175, 55, 0.2);
             z-index: -1;
         }
-
+        
         .hero-subtitle {
             font-size: 1.5rem;
             color: var(--text-light);
             margin-bottom: 30px;
         }
-
+        
         .search-container {
             max-width: 600px;
             margin-top: 40px;
         }
-
+        
         .search-input {
             border: 2px solid #e0e0e0;
             border-radius: 50px;
@@ -181,12 +188,12 @@
             font-size: 1rem;
             transition: var(--transition);
         }
-
+        
         .search-input:focus {
             border-color: var(--secondary-color);
             box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
         }
-
+        
         .search-btn {
             background: var(--secondary-color);
             color: var(--white);
@@ -196,29 +203,34 @@
             font-weight: 600;
             transition: var(--transition);
         }
-
+        
         .search-btn:hover {
             background: var(--accent-color);
             transform: translateY(-2px);
         }
-
+        
         .hero-image {
             position: relative;
             animation: float 6s ease-in-out infinite;
         }
-
+        
         @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-20px); }
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
         }
-
         /* Products Section */
+        
         .section-title {
             position: relative;
             display: inline-block;
             margin-bottom: 30px;
         }
-
+        
         .section-title::after {
             content: '';
             position: absolute;
@@ -228,7 +240,7 @@
             height: 3px;
             background: var(--secondary-color);
         }
-
+        
         .product-card {
             background: var(--white);
             border: none;
@@ -238,29 +250,29 @@
             transition: var(--transition);
             height: 100%;
         }
-
+        
         .product-card:hover {
             transform: translateY(-10px);
             box-shadow: var(--shadow-hover);
         }
-
+        
         .product-img {
             height: 280px;
             overflow: hidden;
             position: relative;
         }
-
+        
         .product-img img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.6s ease;
         }
-
+        
         .product-card:hover .product-img img {
             transform: scale(1.1);
         }
-
+        
         .product-badge {
             position: absolute;
             top: 15px;
@@ -272,38 +284,38 @@
             font-size: 0.8rem;
             font-weight: 600;
         }
-
+        
         .product-info {
             padding: 20px;
         }
-
+        
         .product-title {
             font-size: 1.2rem;
             font-weight: 600;
             margin-bottom: 8px;
             color: var(--primary-color);
         }
-
+        
         .product-category {
             color: var(--text-light);
             font-size: 0.9rem;
             margin-bottom: 10px;
         }
-
+        
         .product-price {
             font-size: 1.5rem;
             font-weight: 700;
             color: var(--secondary-color);
             margin-bottom: 15px;
         }
-
+        
         .product-price span {
             color: var(--text-light);
             text-decoration: line-through;
             font-size: 1rem;
             margin-left: 10px;
         }
-
+        
         .product-btn {
             background: var(--primary-color);
             color: var(--white);
@@ -314,13 +326,13 @@
             width: 100%;
             transition: var(--transition);
         }
-
+        
         .product-btn:hover {
             background: var(--secondary-color);
             transform: translateY(-2px);
         }
-
         /* Categories Section */
+        
         .category-card {
             background: var(--white);
             border-radius: 12px;
@@ -329,23 +341,23 @@
             transition: var(--transition);
             position: relative;
         }
-
+        
         .category-card:hover {
             transform: translateY(-10px);
             box-shadow: var(--shadow-hover);
         }
-
+        
         .category-overlay {
             position: absolute;
             bottom: 0;
             left: 0;
             right: 0;
-            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
             padding: 30px 20px 20px;
             color: var(--white);
         }
-
         /* Testimonials */
+        
         .testimonial-card {
             background: var(--white);
             border-radius: 12px;
@@ -353,50 +365,50 @@
             box-shadow: var(--shadow);
             transition: var(--transition);
         }
-
+        
         .testimonial-card:hover {
             transform: translateY(-5px);
             box-shadow: var(--shadow-hover);
         }
-
+        
         .testimonial-text {
             font-size: 1.1rem;
             font-style: italic;
             color: var(--text-light);
             margin-bottom: 20px;
         }
-
+        
         .testimonial-author {
             display: flex;
             align-items: center;
             gap: 15px;
         }
-
+        
         .author-img {
             width: 50px;
             height: 50px;
             border-radius: 50%;
             object-fit: cover;
         }
-
+        
         .author-info h6 {
             margin-bottom: 5px;
         }
-
         /* Footer */
+        
         .footer {
             background: var(--dark-bg);
             color: var(--white);
             padding: 80px 0 30px;
         }
-
+        
         .footer h5 {
             color: var(--white);
             margin-bottom: 25px;
             position: relative;
             padding-bottom: 10px;
         }
-
+        
         .footer h5::after {
             content: '';
             position: absolute;
@@ -406,28 +418,28 @@
             height: 2px;
             background: var(--secondary-color);
         }
-
+        
         .footer-links li {
             margin-bottom: 12px;
         }
-
+        
         .footer-links a {
             color: #aaa;
             text-decoration: none;
             transition: var(--transition);
         }
-
+        
         .footer-links a:hover {
             color: var(--secondary-color);
             padding-left: 5px;
         }
-
+        
         .social-links {
             display: flex;
             gap: 15px;
             margin-top: 20px;
         }
-
+        
         .social-link {
             width: 40px;
             height: 40px;
@@ -439,12 +451,12 @@
             color: var(--white);
             transition: var(--transition);
         }
-
+        
         .social-link:hover {
             background: var(--secondary-color);
             transform: translateY(-3px);
         }
-
+        
         .footer-bottom {
             border-top: 1px solid #2a2a2a;
             padding-top: 30px;
@@ -452,32 +464,28 @@
             text-align: center;
             color: #aaa;
         }
-
         /* Responsive Design */
+        
         @media (max-width: 1200px) {
             .hero-content h1 {
                 font-size: 3.5rem;
             }
         }
-
+        
         @media (max-width: 992px) {
             .hero-section {
                 padding: 80px 0;
                 text-align: center;
             }
-            
             .hero-content h1 {
                 font-size: 2.8rem;
             }
-            
             .hero-subtitle {
                 font-size: 1.2rem;
             }
-            
             .hero-image {
                 margin-top: 40px;
             }
-            
             .nav-menu {
                 background: var(--white);
                 padding: 20px;
@@ -485,73 +493,64 @@
                 box-shadow: var(--shadow);
             }
         }
-
+        
         @media (max-width: 768px) {
             .hero-content h1 {
                 font-size: 2.2rem;
             }
-            
             .section-title {
                 font-size: 1.8rem;
             }
-            
-            .product-card, .category-card {
+            .product-card,
+            .category-card {
                 margin-bottom: 30px;
             }
-            
             .testimonial-card {
                 margin-bottom: 30px;
             }
-            
             .footer {
                 text-align: center;
             }
-            
             .footer h5::after {
                 left: 50%;
                 transform: translateX(-50%);
             }
-            
             .social-links {
                 justify-content: center;
             }
         }
-
+        
         @media (max-width: 576px) {
             .hero-content h1 {
                 font-size: 1.8rem;
             }
-            
             .hero-subtitle {
                 font-size: 1rem;
             }
-            
             .search-container {
                 flex-direction: column;
             }
-            
             .search-input {
                 margin-bottom: 15px;
             }
-            
             .product-img {
                 height: 220px;
             }
         }
-
         /* Animation Classes */
+        
         .fade-in {
             opacity: 0;
             transform: translateY(30px);
             transition: opacity 0.6s ease, transform 0.6s ease;
         }
-
+        
         .fade-in.visible {
             opacity: 1;
             transform: translateY(0);
         }
-
         /* Loading Animation */
+        
         .loader {
             display: inline-block;
             width: 20px;
@@ -561,13 +560,17 @@
             border-radius: 50%;
             animation: spin 1s linear infinite;
         }
-
+        
         @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
         }
-
         /* Notification */
+        
         .notification {
             position: fixed;
             top: 100px;
@@ -581,12 +584,12 @@
             transform: translateX(100%);
             transition: transform 0.3s ease;
         }
-
+        
         .notification.show {
             transform: translateX(0);
         }
-
         /* Back to Top */
+        
         .back-to-top {
             position: fixed;
             bottom: 30px;
@@ -605,18 +608,19 @@
             transition: var(--transition);
             z-index: 999;
         }
-
+        
         .back-to-top.show {
             opacity: 1;
             visibility: visible;
         }
-
+        
         .back-to-top:hover {
             background: var(--accent-color);
             transform: translateY(-5px);
         }
     </style>
 </head>
+
 <body>
     <!-- Top Bar -->
     <div class="top-bar">
@@ -654,11 +658,11 @@
                 <a class="logo" href="#">
                     Sir<span>raj</span> Collection
                 </a>
-                
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <i class="bi bi-list"></i>
                 </button>
-                
+
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
@@ -680,7 +684,7 @@
                             <a class="nav-link" href="#">Sale</a>
                         </li>
                     </ul>
-                    
+
                     <div class="header-actions">
                         <a href="#" class="action-icon">
                             <i class="bi bi-search"></i>
@@ -710,7 +714,7 @@
                     <div class="hero-content">
                         <h1>Premium Luxury <span class="hero-highlight">Fashion</span> Delivered to Your Doorstep</h1>
                         <p class="hero-subtitle">Nigeria's premier destination for curated luxury fashion and accessories</p>
-                        
+
                         <div class="search-container">
                             <div class="input-group">
                                 <input type="text" class="form-control search-input" placeholder="Search for watches, jackets, bags, sunglasses...">
@@ -719,7 +723,7 @@
                                 </button>
                             </div>
                         </div>
-                        
+
                         <div class="mt-4">
                             <a href="#collections" class="btn btn-dark btn-lg rounded-pill me-3">
                                 Shop Collections
@@ -732,9 +736,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="hero-image text-center">
-                        <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                             alt="Luxury Fashion" 
-                             class="img-fluid rounded-3 shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Luxury Fashion" class="img-fluid rounded-3 shadow-lg">
                     </div>
                 </div>
             </div>
@@ -750,7 +752,7 @@
                     <p class="text-muted">Curated selection of our best-selling luxury items</p>
                 </div>
             </div>
-            
+
             <div class="row g-4">
                 <!-- Product 1 -->
                 <div class="col-md-6 col-lg-4">
@@ -772,7 +774,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Product 2 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="product-card fade-in">
@@ -792,7 +794,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Product 3 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="product-card fade-in">
@@ -813,7 +815,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Product 4 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="product-card fade-in">
@@ -834,7 +836,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Product 5 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="product-card fade-in">
@@ -854,7 +856,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Product 6 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="product-card fade-in">
@@ -875,7 +877,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="text-center mt-5">
                 <a href="#" class="btn btn-outline-dark btn-lg rounded-pill px-5">
                     View All Products <i class="bi bi-arrow-right ms-2"></i>
@@ -893,13 +895,11 @@
                     <p class="text-muted">Browse our curated collections</p>
                 </div>
             </div>
-            
+
             <div class="row g-4">
                 <div class="col-md-6">
                     <div class="category-card">
-                        <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                             alt="Executive Collection" 
-                             class="img-fluid">
+                        <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Executive Collection" class="img-fluid">
                         <div class="category-overlay">
                             <h3>The Executive Choice</h3>
                             <p class="mb-2">Starting from ₦48,750</p>
@@ -907,12 +907,10 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-6">
                     <div class="category-card">
-                        <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                             alt="Grooming Essentials" 
-                             class="img-fluid">
+                        <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Grooming Essentials" class="img-fluid">
                         <div class="category-overlay">
                             <h3>Luxury Grooming Essentials</h3>
                             <p class="mb-2">Starting from ₦50,999</p>
@@ -921,7 +919,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="text-center mt-5">
                 <div class="bg-white p-5 rounded-3 shadow-sm">
                     <h3>Nigeria's No.1 Online Luxury Destination</h3>
@@ -943,7 +941,7 @@
                     <p class="text-muted">Trusted by luxury fashion enthusiasts across Nigeria</p>
                 </div>
             </div>
-            
+
             <div class="row g-4">
                 <div class="col-md-6 col-lg-3">
                     <div class="testimonial-card">
@@ -959,7 +957,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-6 col-lg-3">
                     <div class="testimonial-card">
                         <div class="testimonial-text">
@@ -974,7 +972,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-6 col-lg-3">
                     <div class="testimonial-card">
                         <div class="testimonial-text">
@@ -989,7 +987,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-6 col-lg-3">
                     <div class="testimonial-card">
                         <div class="testimonial-text">
@@ -1022,7 +1020,7 @@
                         <a href="#" class="social-link"><i class="bi bi-pinterest"></i></a>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-2 col-md-6">
                     <h5>Shop</h5>
                     <ul class="footer-links list-unstyled">
@@ -1033,7 +1031,7 @@
                         <li><a href="#">Shoes</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="col-lg-2 col-md-6">
                     <h5>Company</h5>
                     <ul class="footer-links list-unstyled">
@@ -1044,7 +1042,7 @@
                         <li><a href="#">Sustainability</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="col-lg-4 col-md-12">
                     <h5>Contact Info</h5>
                     <div class="mb-4">
@@ -1064,7 +1062,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
                 <p class="mb-0">&copy; 2024 Sirraj Collection. All rights reserved.</p>
                 <p class="mb-0 mt-2">
@@ -1086,7 +1084,7 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
+
     <script>
         // Initialize components
         document.addEventListener('DOMContentLoaded', function() {
@@ -1110,7 +1108,7 @@
 
             // Back to Top
             const backToTop = document.getElementById('backToTop');
-            
+
             window.addEventListener('scroll', () => {
                 if (window.pageYOffset > 300) {
                     backToTop.classList.add('show');
@@ -1133,26 +1131,26 @@
                     const productCard = this.closest('.product-card');
                     const productName = productCard.querySelector('.product-title').textContent;
                     const productPrice = productCard.querySelector('.product-price').textContent.split('₦')[1].trim();
-                    
+
                     // Update cart count
                     const cartCount = document.querySelector('.header-actions .badge-count:last-child');
                     let count = parseInt(cartCount.textContent) || 0;
                     cartCount.textContent = count + 1;
-                    
+
                     // Animation
                     cartCount.style.transform = 'scale(1.3)';
                     setTimeout(() => {
                         cartCount.style.transform = 'scale(1)';
                     }, 300);
-                    
+
                     // Show notification
                     showNotification(`${productName} added to cart!`);
-                    
+
                     // Button loading state
                     const originalText = this.innerHTML;
                     this.innerHTML = '<span class="loader me-2"></span> Adding...';
                     this.disabled = true;
-                    
+
                     setTimeout(() => {
                         this.innerHTML = originalText;
                         this.disabled = false;
@@ -1165,7 +1163,7 @@
                 const notification = document.getElementById('notification');
                 notification.textContent = message;
                 notification.classList.add('show');
-                
+
                 setTimeout(() => {
                     notification.classList.remove('show');
                 }, 3000);
@@ -1174,14 +1172,14 @@
             // Search functionality
             const searchBtn = document.querySelector('.search-btn');
             const searchInput = document.querySelector('.search-input');
-            
+
             searchBtn.addEventListener('click', () => {
                 if (searchInput.value.trim()) {
                     showNotification(`Searching for "${searchInput.value}"...`);
                     // In a real application, you would redirect to search results
                 }
             });
-            
+
             searchInput.addEventListener('keypress', (e) => {
                 if (e.key === 'Enter') {
                     searchBtn.click();
@@ -1195,11 +1193,11 @@
                     // Close mobile menu when clicking a link
                     const navbarToggler = document.querySelector('.navbar-toggler');
                     const navbarNav = document.querySelector('#navbarNav');
-                    
+
                     if (navbarToggler && !navbarToggler.classList.contains('collapsed')) {
                         navbarToggler.click();
                     }
-                    
+
                     // Update active state
                     navLinks.forEach(l => l.classList.remove('active'));
                     link.classList.add('active');
@@ -1212,7 +1210,7 @@
                 card.addEventListener('mouseenter', () => {
                     card.style.transform = 'translateY(-10px)';
                 });
-                
+
                 card.addEventListener('mouseleave', () => {
                     card.style.transform = 'translateY(0)';
                 });
@@ -1221,7 +1219,7 @@
             // Newsletter subscription
             const subscribeBtn = document.querySelector('.footer .btn-secondary');
             const subscribeInput = document.querySelector('.footer input[type="email"]');
-            
+
             if (subscribeBtn && subscribeInput) {
                 subscribeBtn.addEventListener('click', () => {
                     if (subscribeInput.value && isValidEmail(subscribeInput.value)) {
@@ -1240,7 +1238,7 @@
             }
 
             // Set current year
-            document.querySelector('.footer-bottom p:first-child').innerHTML = 
+            document.querySelector('.footer-bottom p:first-child').innerHTML =
                 `&copy; ${new Date().getFullYear()} Sirraj Collection. All rights reserved.`;
         });
 
@@ -1255,4 +1253,5 @@
         });
     </script>
 </body>
+
 </html>
